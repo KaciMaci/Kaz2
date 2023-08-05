@@ -59,16 +59,12 @@
             key-positions = <1 8>;
             bindings = <&tog layer_3>;
            };
-/ {
-    behaviors {
-        ATAB: a_tab {
+       ATAB: a_tab {
             compatible = "zmk,behavior-mod-morph";
             label = "A_TAB";
             #binding-cells = <0>;
             bindings = <&kp A>, <&kp TAB>;
             mods = <(MOD_LALT)>;
-                };
-             };
           };
        };   
     };
