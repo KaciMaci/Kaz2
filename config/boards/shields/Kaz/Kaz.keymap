@@ -16,6 +16,7 @@
 #define layer_3 3
 
 / {
+
     behaviors {
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
@@ -25,6 +26,7 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+
     td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_0";
@@ -32,6 +34,7 @@
             tapping-term-ms = <200>;
             bindings = <&kp LSHIFT>, <&kp CAPS>;
         };
+
      td1: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_1";
@@ -40,18 +43,27 @@
             bindings = <&kp MINUS>, <&kp DELETE>;
         };
 
+      ATAB: a_tab {
+            compatible = "zmk,behavior-mod-morph";
+            label = "A_TAB";
+            #binding-cells = <0>;
+            bindings = <&kp A>, <&kp TAB>;
+            mods = <(MOD_LALT)>;
+        };
+
         combos {
         compatible = "zmk,combos";
         combo_esc {
             timeout-ms = <50>;
             key-positions = <0 9>;
             bindings = <&tog layer_2>;
-           };
+        };
+
         combo_bluetooth {
             timeout-ms = <50>;
             key-positions = <1 8>;
             bindings = <&tog layer_3>;
-           };
+          };
        };   
     };
 };
@@ -63,7 +75,7 @@
        layer_0 {
             bindings = <
     &kp Q     &kp W      &kp E       &kp R       &kp T       &kp Y       &kp U       &kp I       &kp O      &kp P
-    &kp Q     &kp S      &kp D       &kp F       &kp G       &kp H       &kp J       &kp K       &kp L      &mt UNDERSCORE SEMICOLON
+    &ATAB     &kp S      &kp D       &kp F       &kp G       &kp H       &kp J       &kp K       &kp L      &mt UNDERSCORE SEMICOLON
     &kp Z                &kp X       &kp C       &kp V       &kp B       &kp N       &kp M       &mt COMMA DOT  &td0
     &mo layer_1  &mt LCTRL LGUI     &kp LALT       &kp SPACE     &td1    &kp BACKSPACE   &kp ENTER   
             >;
