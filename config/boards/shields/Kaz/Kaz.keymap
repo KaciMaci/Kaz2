@@ -63,13 +63,14 @@
        layer_0 {
             bindings = <
     &kp Q     &kp W      &kp E       &kp R       &kp T       &kp Y       &kp U       &kp I       &kp O      &kp P
-    &ATAB     &kp S      &kp D       &kp F       &kp G       &kp H       &kp J       &kp K       &kp L      &mt UNDERSCORE SEMICOLON
+    &kp Q     &kp S      &kp D       &kp F       &kp G       &kp H       &kp J       &kp K       &kp L      &mt UNDERSCORE SEMICOLON
     &kp Z                &kp X       &kp C       &kp V       &kp B       &kp N       &kp M       &mt COMMA DOT  &td0
-    &mo layer_1  &mt LCTRL LGUI     &kp LALT       &kp SPACE     &td1    &kp BACKSPACE   &kp ENTER    
+    &mo layer_1  &mt LCTRL LGUI     &kp LALT       &kp SPACE     &td1    &kp BACKSPACE   &kp ENTER   
             >;
         };
 
-	@@ -74,7 +92,7 @@
+        layer_1 {
+            bindings = <
     &mt F2 N1     &mt F3 N2     &mt F4 N3     &mt F5 N4     &mt F6 N5     &mt F7 N6     &mt F8 N7     &mt F9 N8      &mt F10 N9    &mt F11 N0 
     &kp F1       &none      &kp UP      &none      &none      &none      &none      &none       &none     &kp F12 
     &kp LSHFT                 &kp LEFT      &kp RIGHT      &none      &none      &none      &none      &mt COMMA DOT     &td0
@@ -77,7 +78,8 @@
             >;
          };
 
-	@@ -83,7 +101,7 @@
+         layer_2 {
+             bindings = <
     &kp ESC     &kp Q     &kp W      &kp E       &kp R       &kp T       &kp Y       &kp U       &kp I       &mt P O
     &kp TAB     &kp A     &kp S      &kp D       &kp F       &kp G       &kp H       &kp J       &kp K       &kp L
     &kp LSHFT    &kp Z                &kp X       &kp C       &kp V       &kp B       &kp N       &kp M      &kp RSHFT
@@ -85,7 +87,8 @@
           >;
        };
 
-	@@ -92,7 +110,7 @@
+       layer_3 {
+             bindings = <
     &kp F     &kp F     &kp F      &kp F       &kp F       &kp F       &kp F       &kp F       &kp F       &kp F
     &bl BL_TOG     &bl BL_CYCLE     &kp F      &kp F       &kp F       &kp F       &kp F       &kp F       &kp F       &kp F
     &kp F               &kp F      &kp F       &kp F       &kp F       &kp F       &kp F       &kp F       &kp F
@@ -93,3 +96,4 @@
           >;
        };
     };
+};
