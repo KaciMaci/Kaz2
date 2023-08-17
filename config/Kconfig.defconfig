@@ -1,6 +1,0 @@
-if SHIELD_KAZ
-
-config ZMK_KEYBOARD_NAME
-    default "Kaz"
-
-endif
