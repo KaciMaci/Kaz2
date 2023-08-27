@@ -103,7 +103,7 @@
              bindings = <
     &kp F     &kp F     &kp F      &kp F       &kp F       &kp F       &kp F       &kp F       &kp F       &kp F
     &bl BL_TOG     &bl BL_CYCLE     &kp F      &kp F       &kp F       &kp F       &kp F       &kp F       &kp F       &kp F
-    &rgb_ug RGB_TOG    &kp F      &kp F       &kp F       &kp F       &kp F       &kp F       &kp F       &kp F
+    &rgb_ug RGB_TOG    &rgb_ug RGB_HUI      &rgb_ug RGB_HUD       &none       &&rgb_ug RGB_BRI      &rgb_ug RGB_BRD      &rgb_ug RGB_SPI      &rgb_ug RGB_SPD      &rgb_ug RGB_EFF
     &kp F     &kp F     &kp F      &kp F       &kp F     &bt BT_CLR    &bootloader
           >;
        };
