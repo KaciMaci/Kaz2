@@ -49,6 +49,7 @@
             #binding-cells = <0>;
             bindings = <&kp A>, <&kp TAB>;
             mods = <(MOD_LALT)>;
+            keep-mods = <(MOD_LALT)>;
         };
 
         combos {
